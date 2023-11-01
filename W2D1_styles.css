@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ion-icon {
+    font-size: 20pt;
+}
+
+.pinterest_card {
+    margin: auto;
+    position: relative;
+    height: 700px;
+    width: 500px;
+    border-radius: 45px;
+    overflow: hidden;
+}
+
+.pinterest_card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.pinterest_card:hover .savebutton_slider {
+    transform: translateY(+100px);
+}
+
+.pinterest_card:hover .lowbuttons_slider {
+    transform: translateY(0px);
+}
+
+.image {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.savebutton_slider {
+    height: 120px;
+    position: absolute;
+    right: 20px;
+    top: -80px;
+    transition: all 0.5s;
+}
+
+.savebutton {
+    background-color: darkred;
+    margin-bottom: 60px;
+    padding: 0.5em;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 20pt;
+}
+
+
+.lowbuttons_slider {
+    z-index: 1;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    transform: translateY(80px);
+    transition: all 0.5s;
+}
+
+
+.lowbuttons_slider div {
+    display: inline-block;
+    font-size: 20pt;
+    padding: 0.5em;
+    text-align: center;
+    background-color: white;
+    opacity: 90%;
+    padding: 0.5em;
+}
+
+
+/* .lowbuttons_slider:hover {
+    transform: translateY(0px);
+} */
+
+
+.site {
+    width: 300px;
+    border-radius: 23px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.share {
+    border-radius: 50%;
+
+}
+
+.menu {
+    border-radius: 50%;
+
+}
